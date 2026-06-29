@@ -41,4 +41,15 @@ angle representation and passes it to Qiskit via controlled approximation.
 
 - Console: angle, ideal counts, fidelity estimate per step
 - `flqc_results.png`: fidelity vs circuit depth, with FLQC floor overlay
-"# FLQC-Protocol" 
+"# FLQC-Protocol"
+
+### License
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+**CC BY-NC 4.0** — Creative Commons Attribution-NonCommercial 4.0 International.
+
+You are free to use, share, and adapt this code for **non-commercial purposes**
+provided you give appropriate credit. Commercial use requires written permission
+from the author.
+
+© 2026 Sergej Materov <sergejmaterov2@gmail.com> ORCID: 0009-0001-3398-9906
