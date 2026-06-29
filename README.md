@@ -6,7 +6,8 @@ phase-resolution test protocol.
 ## What this is
 
 This repository implements the gate sequence proposed in the FLQC preprint
-(Zenodo / ResearchGate) for searching an anomalous systematic phase offset
+([Fundamental Limit of Quantum Computation (FLQC)](https://doi.org/10.5281/zenodo.20934667))
+for searching an anomalous systematic phase offset
 in quantum Fourier transform circuits that cannot be attributed to known
 noise mechanisms.
 
