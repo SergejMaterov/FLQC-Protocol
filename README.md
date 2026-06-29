@@ -35,6 +35,10 @@ angle representation and passes it to Qiskit via controlled approximation.
 
 ## Usage
 
+flqc_protocol.py - Main protocol. Sweeps from n = 1 to max_n; uses mpmath for precise angles (independent of float64); issues a warning when n > 52; plots the results with an FLQC floor overlay. On the simulator, a floor of 0 represents the baseline. On a real QPU, a non-zero residual is expected.
+
+analyse_results.py - Post-processing for data from a real QPU. A two-stage fit: first, it fits the hardware-noise component at shallow depths (n ≤ 20), then subtracts it and compares the residual with the FLQC prediction. It outputs the ratio of the residual/FLQC_predicted —if the value is ≈ 1, it indicates a signal.
+
     python flqc_protocol.py            # full sweep n = 1..60
     python flqc_protocol.py --shots 50000 --max_n 40
 
