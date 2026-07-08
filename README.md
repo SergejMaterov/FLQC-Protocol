@@ -6,7 +6,7 @@ phase-resolution test protocol.
 ## What this is
 
 This repository implements the gate sequence proposed in the FLQC preprint
-([Fundamental Limit of Quantum Computation (FLQC)](https://doi.org/10.5281/zenodo.20934667))
+[Fundamental Limit of Quantum Computation (FLQC)](https://doi.org/10.5281/zenodo.21253441)
 for searching an anomalous systematic phase offset
 in quantum Fourier transform circuits that cannot be attributed to known
 noise mechanisms.
@@ -62,7 +62,7 @@ a signal.
 
 **What this repository is for, currently.** It is a reference
 implementation of the measurement protocol and the noise-subtraction
-methodology described in the FLQC manuscript (§4.1), useful for:
+methodology described in the [FLQC manuscript (§4.1)](https://doi.org/10.5281/zenodo.21253441), useful for:
 - verifying the simulator reproduces the expected null result (no floor,
   as it should, since the simulator has no FLQC term);
 - providing a ready-to-run template for if/when qubit coherence, repetition
@@ -71,10 +71,8 @@ methodology described in the FLQC manuscript (§4.1), useful for:
 - giving reviewers and readers a concrete, falsifiable object to inspect,
   rather than an abstract claim.
 
-It is not, at present, a live experimental proposal expected to produce a
-positive or negative result on existing hardware. See the manuscript,
-§4.3, for the full derivation of the gap above, and the note on why
-chaotic (OTOC) amplification does not close it either.
+It is not, at present, a live experimental proposal expected to produce a positive or negative result on existing hardware. See the [manuscript,
+§4.3](https://doi.org/10.5281/zenodo.21253441), for the full derivation of the gap above, and the note on why chaotic (OTOC) amplification does not close it either.
 
 ## Usage
 
