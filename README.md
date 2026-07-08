@@ -33,6 +33,49 @@ angle representation and passes it to Qiskit via controlled approximation.
 
     pip install qiskit qiskit-aer mpmath numpy matplotlib
 
+---
+
+## Status / Known Limitations
+
+The protocol implemented here is methodologically correct but **not currently
+capable of confirming or refuting FLQC on real hardware**. This is a
+quantitative, not qualitative, limitation, and it is worth stating plainly.
+
+**The gap.** FLQC predicts $Δθ_{min}$ ~ 10⁻³⁰ rad. Best demonstrated
+superconducting-qubit coherence times are ~1 ms; best achievable
+measurement-cycle repetition rates are ~10⁶ Hz. Resolving a phase at the
+10⁻³⁰ rad level, even under an idealized Heisenberg-limited scheme with
+N ~ 10³ entangled qubits, requires on the order of 10⁵⁴ independent
+measurements — about 10⁴⁸ seconds of continuous operation. Ordinary
+decoherence-induced phase noise at currently achievable coherence times
+already exceeds the predicted floor by a comparable margin.
+
+**What this means for a real QPU run.** A non-zero residual on current
+hardware is expected regardless of whether FLQC is correct — it is what
+technical noise looks like. Do not interpret `residual / Δθ_{min} ≈ 1` as
+evidence. Given the ~30-order-of-magnitude gap between the predicted floor
+and any achievable noise floor, a fit result landing near 1 is far more
+likely to indicate a fitting artifact (overfitting the two-stage model at
+small n, numerical precision effects in the noise-extrapolation step) than
+a genuine detection. Treat such a result as a flag to audit the fit, not as
+a signal.
+
+**What this repository is for, currently.** It is a reference
+implementation of the measurement protocol and the noise-subtraction
+methodology described in the FLQC manuscript (§4.1), useful for:
+- verifying the simulator reproduces the expected null result (no floor,
+  as it should, since the simulator has no FLQC term);
+- providing a ready-to-run template for if/when qubit coherence, repetition
+  rate, or statistical methodology improve enough to close a meaningful
+  fraction of the gap above;
+- giving reviewers and readers a concrete, falsifiable object to inspect,
+  rather than an abstract claim.
+
+It is not, at present, a live experimental proposal expected to produce a
+positive or negative result on existing hardware. See the manuscript,
+§4.3, for the full derivation of the gap above, and the note on why
+chaotic (OTOC) amplification does not close it either.
+
 ## Usage
 
 flqc_protocol.py - Main protocol. Sweeps from n = 1 to max_n; uses mpmath for precise angles (independent of float64); issues a warning when n > 52; plots the results with an FLQC floor overlay. On the simulator, a floor of 0 represents the baseline. On a real QPU, a non-zero residual is expected.
