@@ -43,7 +43,9 @@ package, feasibility analysis, and real measurement protocol, see:
 
 ## License
 
-CC BY-NC 4.0. see LICENSE for details. Educational
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+CC BY-NC 4.0. Educational
 and research use is unrestricted under CC BY-NC 4.0; commercial hardware
 implementation is not covered by this license.
 
