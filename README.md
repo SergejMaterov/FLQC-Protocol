@@ -83,6 +83,7 @@ analyse_results.py - Post-processing for data from a real QPU. A two-stage fit: 
 
     python flqc_protocol.py            # full sweep n = 1..60
     python flqc_protocol.py --shots 50000 --max_n 40
+    Notebook                           # notebook demo in QPU with qiskit
 
 ## Output
 
