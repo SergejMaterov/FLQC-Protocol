@@ -4,7 +4,9 @@ Three notebooks, zero installation, real Qiskit circuits. Click, run, play
 with the sliders.
 
 
-| Phase-floor demo | Why a discretized spacetime would leave a fingerprint in a quantum circuit's error pattern | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/SergejMaterov/FLQC-Protocol/blob/main/Notebook/badge-preview.png)](https://github.com/SergejMaterov/FLQC-Protocol/blob/main/Notebook/badge-preview.png) |
+| Phase-floor demo | Why a discretized spacetime would leave a fingerprint in a quantum circuit's error pattern | | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SergejMaterov/FLQC-Protocol/blob/main/Notebook/flqc_phase_floor_demo.ipynb#scrollTo=b649ba54) |
+
+| [![DEMO](https://github.com/SergejMaterov/FLQC-Protocol/blob/main/Notebook/badge-preview.png)](https://github.com/SergejMaterov/FLQC-Protocol/blob/main/Notebook/badge-preview.png) |
 
 No installation, no account beyond a free Google login. Each notebook takes
 under a minute to start and is meant to be readable by a physics undergrad
