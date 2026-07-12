@@ -49,4 +49,6 @@ CC BY-NC 4.0. Educational
 and research use is unrestricted under CC BY-NC 4.0; commercial hardware
 implementation is not covered by this license.
 
+| [![QPU](https://github.com/SergejMaterov/FLQC-Protocol/blob/main/Notebook/QPU.jpg)](https://github.com/SergejMaterov/FLQC-Protocol/blob/main/Notebook/QPU.jpg) |
+
 
